@@ -4,16 +4,25 @@ import { connect} from 'react-redux';
 
 class BookDetail extends Component{
 
+
   render(){
+    if (!this.props.book) {
+      return (
+        <div>Please select a book</div>
+      )
+    }
+
     return(
-      <div>BookDetail!!</div>
+      <div>
+        {this.props.book.title}
+      </div>
     )
   }
 }
 
 function mapStateToProps(state){
   return {
-    book: state.activebook
+    book: state.activeBook
   }
 }
 

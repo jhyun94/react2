@@ -1,5 +1,5 @@
 export function selectBook(book) {
-  return {
+    return {
     type: 'SELECTED_BOOK',
     payload: book
   }

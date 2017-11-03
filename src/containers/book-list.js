@@ -37,8 +37,8 @@ function mapStateToProps(state){
   }
 }
 
-function mapDispatchtoProps(dispatch){
-  return bindActionCreators({ selectBook: selectBook}, dispatch)
+function mapDispatchToProps(dispatch){
+  return bindActionCreators({ selectBook: selectBook}, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchtoProps)(BookList);
+export default connect(mapStateToProps, mapDispatchToProps)(BookList);
