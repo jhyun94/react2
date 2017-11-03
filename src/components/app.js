@@ -7,7 +7,7 @@ import BookList from '../containers/book-list';
 export default class App extends Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <BookList />
       </div>
     );
