@@ -1,3 +1,3 @@
-export function selectBook(){
-  console.log('working');
+export function selectBook(book){
+  console.log(book.title);
 }
